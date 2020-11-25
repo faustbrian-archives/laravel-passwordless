@@ -44,13 +44,6 @@
     "config": {
         "sort-packages": true
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Konceiver\\Passwordless\\Providers\\PasswordlessServiceProvider"
-            ]
-        }
-    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }

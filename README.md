@@ -17,6 +17,41 @@ This package was created by, and is maintained by [Brian Faust](https://github.c
 composer require konceiver/laravel-passwordless
 ```
 
+### Register Service Provider
+
+> The manual registration is currently required because `pushMiddlewareToGroup` seems to be ignored if autoloading is used. Register the service provider manually avoids the issue and removes the need for other manual registrations.
+
+Open your `config/app.php` and add `PasswordlessServiceProvider::class` to the `providers` array like in the below example.
+
+```php
+<?php
+
+return [
+
+    'providers' => [
+
+        // ...
+
+        Illuminate\View\ViewServiceProvider::class,
+
+        /*
+         * Package Service Providers...
+         */
+
+         \Konceiver\Passwordless\Providers\PasswordlessServiceProvider::class,
+
+        /*
+         * Application Service Providers...
+         */
+        App\Providers\AppServiceProvider::class,
+
+        // ...
+
+    ],
+
+];
+```
+
 ## Usage
 
 See our [extensive test suite](./tests/Unit) for usage example.

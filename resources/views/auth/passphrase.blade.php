@@ -12,7 +12,7 @@
             </div>
         @endif
 
-        <form method="POST" action="{{ route('login.passwordlress') }}">
+        <form method="POST" action="{{ route('login.passwordless.confirmation') }}">
             @csrf
 
             <div class="mt-4">

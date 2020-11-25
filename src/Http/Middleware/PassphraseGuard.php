@@ -41,6 +41,6 @@ final class PassphraseGuard
             return $next($request);
         }
 
-        return redirect()->route('login.confirm');
+        return redirect()->route('login.passwordless');
     }
 }
