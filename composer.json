@@ -1,0 +1,56 @@
+{
+    "name": "konceiver/laravel-passwordless",
+    "description": "Convert bytes to a human readable strings",
+    "keywords": [
+        "konceiver",
+        "laravel-passwordless"
+    ],
+    "homepage": "https://github.com/konceiver/laravel-passwordless",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@konceiver.dev",
+            "homepage": "https://konceiver.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/auth": "^8.0",
+        "illuminate/contracts": "^8.0",
+        "illuminate/session": "^8.0",
+        "illuminate/support": "^8.0",
+        "konceiver/passphrase": "^1.1",
+        "laravel/fortify": "^1.7"
+    },
+    "require-dev": {
+        "konceiver/laravel-stan": "^1.1",
+        "konceiver/stan": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Konceiver\\Passwordless\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Konceiver\\Passwordless\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest --coverage --min=100"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Konceiver\\Passwordless\\Providers\\PasswordlessServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
