@@ -4,9 +4,7 @@
 
 [![Latest Version](https://badgen.net/packagist/v/konceiver/laravel-passwordless)](https://packagist.org/packages/konceiver/laravel-passwordless)
 [![Software License](https://badgen.net/packagist/license/konceiver/laravel-passwordless)](https://packagist.org/packages/konceiver/laravel-passwordless)
-[![Build Status](https://img.shields.io/github/workflow/status/konceiver/laravel-passwordless/run-tests?label=tests)](https://github.com/konceiver/laravel-passwordless/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Coverage Status](https://badgen.net/codeclimate/coverage/konceiver/laravel-passwordless)](https://codeclimate.com/github/konceiver/laravel-passwordless)
-[![Quality Score](https://badgen.net/codeclimate/maintainability/konceiver/laravel-passwordless)](https://codeclimate.com/github/konceiver/laravel-passwordless)
+[![Build Status](https://img.shields.io/github/workflow/status/konceiver/laravel-passwordless/run-tests?label=tests)](https://img.shields.io/github/workflow/status/konceiver/laravel-passwordless/CI?label=CI)
 [![Total Downloads](https://badgen.net/packagist/dt/konceiver/laravel-passwordless)](https://packagist.org/packages/konceiver/laravel-passwordless)
 
 This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides an easy way of using passwordless logins like [Notion](https://notion.so).
