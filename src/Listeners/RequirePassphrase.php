@@ -27,7 +27,7 @@ final class RequirePassphrase
             return;
         }
 
-        $passphrase = EFF::new()->useFiveDiceList()->generate(5);
+        $passphrase = EFF::useFiveDiceList()->generate(5);
 
         Session::put(AuthSession::PASSPHRASE, $passphrase);
         Session::put(AuthSession::PASSPHRASE_EXPIRATION, now()->addMinutes(15)->timestamp);
