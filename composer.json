@@ -24,7 +24,8 @@
         "illuminate/validation": "^8.0",
         "konceiver/passphrase": "^1.1",
         "laravel/fortify": "^1.7",
-        "nesbot/carbon": "^2.41"
+        "nesbot/carbon": "^2.41",
+        "spatie/laravel-package-tools": "^1.9"
     },
     "require-dev": {
         "konceiver/laravel-stan": "^1.1",
