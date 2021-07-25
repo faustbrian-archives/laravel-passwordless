@@ -33,7 +33,7 @@ it('should not send a notification if the user is already authenticated', functi
     Notification::assertNothingSent();
 });
 
-final class User extends Model
+final class RequirePassphraseTest extends Model
 {
     use Notifiable;
 }
