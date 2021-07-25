@@ -33,6 +33,9 @@ it('should not send a notification if the user is already authenticated', functi
     Notification::assertNothingSent();
 });
 
+/**
+ * @coversNothing
+ */
 final class RequirePassphraseTest extends Model
 {
     use Notifiable;
